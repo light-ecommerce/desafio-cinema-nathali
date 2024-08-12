@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingressos Systemplex</title>
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+</head>
+<body>
+    <h1>INGRESSOS SYSTEMPLEX</h1>
+    <form id="reservaForm">
+        <div class="movie-list">
+            <div class="movie">
+                <img src="/Projeto_cinema/imagens/O Exorcismo/O exorcismo.png" width="300" height="400" alt="O Exorcismo">
+                <h2>O Exorcismo</h2>
+                <p>Data de Lançamento: 31 de julho de 2024</p>
+                <p>Gênero: Fantasia, Terror, Suspense</p>
+                <p>Duração: 1h 33min</p>
+                <p>Direção: Joshua John Miller, M.A. Fortin</p>
+                <p>Elenco: Russell Crowe, Sam Worthington, David Hyde Pierce</p>
+                <p>Avaliação dos Usuários: <span class="rating">2.5</span></p>
+            </div>
+        </div>
+
+        <div class="date-selector">
+            <button class="date-button" data-date="2024-08-12">Seg. 12 Ago.</button>
+            <button class="date-button" data-date="2024-08-13">Ter. 13 Ago.</button>
+            <button class="date-button" data-date="2024-08-14">Qua. 14 Ago.</button>
+            <button class="date-button" data-date="2024-08-15">Qui. 15 Ago.</button>
+        </div>
+
+        <div>
+            <select id="sessao" name="sessao">
+                <label for="horario">Selecione o Horário:</label>
+                    <option value="14:00">14:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="20:00">20:00</option>
+                </select>
+
+        </div> 
+        
+        <label for="numIngressos">Número de Ingressos:</label>
+            <input type="number" id="numIngressos" name="numIngressos" min="1" max="50">
+
+            <h1>Selecione seus assentos</h1>
+    <div class="cinema-seats">
+        <div class="row">
+            <button class="seat" data-row="A" data-number="1">A1</button>
+            <button class="seat" data-row="A" data-number="2">A2</button>
+            <button class="seat" data-row="A" data-number="3">A3</button>
+            <button class="seat" data-row="A" data-number="4">A4</button>
+            <button class="seat" data-row="A" data-number="5">A5</button>
+            <button class="seat" data-row="A" data-number="6">A6</button>
+            <button class="seat" data-row="A" data-number="7">A7</button>
+            <button class="seat" data-row="A" data-number="8">A8</button>
+            <button class="seat" data-row="A" data-number="9">A9</button>
+            <button class="seat" data-row="A" data-number="10">A10</button>
+        </div>
+    </div>
+    <div class="cinema-seats">
+        <div class="row">
+            <button class="seat" data-row="B" data-number="1">B1</button>
+            <button class="seat" data-row="B" data-number="2">B2</button>
+            <button class="seat" data-row="B" data-number="3">B3</button>
+            <button class="seat" data-row="B" data-number="4">B4</button>
+            <button class="seat" data-row="B" data-number="5">B5</button>
+            <button class="seat" data-row="B" data-number="6">B6</button>
+            <button class="seat" data-row="B" data-number="7">B7</button>
+            <button class="seat" data-row="B" data-number="8">B8</button>
+            <button class="seat" data-row="B" data-number="9">B9</button>
+            <button class="seat" data-row="B" data-number="10">B10</button>
+        </div>
+    </div>
+    <div class="cinema-seats">
+        <div class="row">
+            <button class="seat" data-row="C" data-number="1">C1</button>
+            <button class="seat" data-row="C" data-number="2">C2</button>
+            <button class="seat" data-row="C" data-number="3">C3</button>
+            <button class="seat" data-row="C" data-number="4">C4</button>
+            <button class="seat" data-row="C" data-number="5">C5</button>
+            <button class="seat" data-row="C" data-number="6">C6</button>
+            <button class="seat" data-row="C" data-number="7">C7</button>
+            <button class="seat" data-row="C" data-number="8">C8</button>
+            <button class="seat" data-row="C" data-number="9">C9</button>
+            <button class="seat" data-row="C" data-number="10">C10</button>
+        </div>
+    </div>
+    <div class="cinema-seats">
+        <div class="row">
+            <button class="seat" data-row="D" data-number="1">D1</button>
+            <button class="seat" data-row="D" data-number="2">D2</button>
+            <button class="seat" data-row="D" data-number="3">D3</button>
+            <button class="seat" data-row="D" data-number="4">D4</button>
+            <button class="seat" data-row="D" data-number="5">D5</button>
+            <button class="seat" data-row="D" data-number="6">D6</button>
+            <button class="seat" data-row="D" data-number="7">D7</button>
+            <button class="seat" data-row="D" data-number="8">D8</button>
+            <button class="seat" data-row="D" data-number="9">D9</button>
+            <button class="seat" data-row="D" data-number="10">D10</button>
+        </div>
+    </div>
+    <div class="cinema-seats">
+        <div class="row">
+            <button class="seat" data-row="E" data-number="1">E1</button>
+            <button class="seat" data-row="E" data-number="2">E2</button>
+            <button class="seat" data-row="E" data-number="3">E3</button>
+            <button class="seat" data-row="E" data-number="4">E4</button>
+            <button class="seat" data-row="E" data-number="5">E5</button>
+            <button class="seat" data-row="E" data-number="6">E6</button>
+            <button class="seat" data-row="E" data-number="7">E7</button>
+            <button class="seat" data-row="E" data-number="8">E8</button>
+            <button class="seat" data-row="E" data-number="9">E9</button>
+            <button class="seat" data-row="E" data-number="10">E10</button>
+        </div>
+    </div>
+        
+        <div class="movie-list" id="movie-list">
+        </div>
+
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required>
+        </div>
+        
+        <button type="submit">Reservar Ingresso</button>
+    </form>
+
+           <div class="movie">
+                <img src="/Projeto_cinema/imagens/Meu Malvado Favorito/Meu malvado favorito 4.png" width="300" height="400" alt="Meu Malvado Favorito 4">
+                <h2>Meu Malvado Favorito 4</h2>
+                <p>Data de Lançamento: 03 de julho de 2024</p>
+                <p>Gênero: Aventura, Animação, Comédia</p>
+                <p>Duração: 1h 34min</p>
+                <p>Direção: Patrick Delage, Chris Renaud</p>
+                <p>Elenco: Steve Carell, Kristen Wiig, Pierre Coffin</p>
+                <p>Avaliação dos Usuários: <span class="rating">4.0</span></p>
+                
+            </div>
+        </div>
+
+        <div class="date-selector">
+            <button class="date-button active" data-date="2024-08-07">Qua. 7 Ago.</button>
+            <button class="date-button" data-date="2024-08-08">Qui. 8 Ago.</button>
+            <button class="date-button" data-date="2024-08-09">Sex. 9 Ago.</button>
+            <button class="date-button" data-date="2024-08-10">Sáb. 10 Ago.</button>
+        </div>
+
+        <div>
+            <label for="sessao">Selecione o Horário:</label>
+            <select id="sessao" name="sessao">
+                <option value="14:00">14:00</option>
+                <option value="16:00">16:00</option>
+                <option value="18:00">18:00</option>
+                <option value="20:00">20:00</option>
+            </select>
+        </div>  
+
+        <label for="numIngressos">Número de Ingressos:</label>
+            <input type="number" id="numIngressos" name="numIngressos" required>
+
+            <h1>Selecione seus assentos</h1>
+            <div class="cinema-seats">
+                <div class="row">
+                    <button class="seat" data-row="A" data-number="1">A1</button>
+                    <button class="seat" data-row="A" data-number="2">A2</button>
+                    <button class="seat" data-row="A" data-number="3">A3</button>
+                    <button class="seat" data-row="A" data-number="4">A4</button>
+                    <button class="seat" data-row="A" data-number="5">A5</button>
+                    <button class="seat" data-row="A" data-number="6">A6</button>
+                    <button class="seat" data-row="A" data-number="7">A7</button>
+                    <button class="seat" data-row="A" data-number="8">A8</button>
+                    <button class="seat" data-row="A" data-number="9">A9</button>
+                    <button class="seat" data-row="A" data-number="10">A10</button>
+                </div>
+            </div>
+            <div class="cinema-seats">
+                <div class="row">
+                    <button class="seat" data-row="B" data-number="1">B1</button>
+                    <button class="seat" data-row="B" data-number="2">B2</button>
+                    <button class="seat" data-row="B" data-number="3">B3</button>
+                    <button class="seat" data-row="B" data-number="4">B4</button>
+                    <button class="seat" data-row="B" data-number="5">B5</button>
+                    <button class="seat" data-row="B" data-number="6">B6</button>
+                    <button class="seat" data-row="B" data-number="7">B7</button>
+                    <button class="seat" data-row="B" data-number="8">B8</button>
+                    <button class="seat" data-row="B" data-number="9">B9</button>
+                    <button class="seat" data-row="B" data-number="10">B10</button>
+                </div>
+            </div>
+            <div class="cinema-seats">
+                <div class="row">
+                    <button class="seat" data-row="C" data-number="1">C1</button>
+                    <button class="seat" data-row="C" data-number="2">C2</button>
+                    <button class="seat" data-row="C" data-number="3">C3</button>
+                    <button class="seat" data-row="C" data-number="4">C4</button>
+                    <button class="seat" data-row="C" data-number="5">C5</button>
+                    <button class="seat" data-row="C" data-number="6">C6</button>
+                    <button class="seat" data-row="C" data-number="7">C7</button>
+                    <button class="seat" data-row="C" data-number="8">C8</button>
+                    <button class="seat" data-row="C" data-number="9">C9</button>
+                    <button class="seat" data-row="C" data-number="10">C10</button>
+                </div>
+            </div>
+            <div class="cinema-seats">
+                <div class="row">
+                    <button class="seat" data-row="D" data-number="1">D1</button>
+                    <button class="seat" data-row="D" data-number="2">D2</button>
+                    <button class="seat" data-row="D" data-number="3">D3</button>
+                    <button class="seat" data-row="D" data-number="4">D4</button>
+                    <button class="seat" data-row="D" data-number="5">D5</button>
+                    <button class="seat" data-row="D" data-number="6">D6</button>
+                    <button class="seat" data-row="D" data-number="7">D7</button>
+                    <button class="seat" data-row="D" data-number="8">D8</button>
+                    <button class="seat" data-row="D" data-number="9">D9</button>
+                    <button class="seat" data-row="D" data-number="10">D10</button>
+                </div>
+            </div>
+            <div class="cinema-seats">
+                <div class="row">
+                    <button class="seat" data-row="E" data-number="1">E1</button>
+                    <button class="seat" data-row="E" data-number="2">E2</button>
+                    <button class="seat" data-row="E" data-number="3">E3</button>
+                    <button class="seat" data-row="E" data-number="4">E4</button>
+                    <button class="seat" data-row="E" data-number="5">E5</button>
+                    <button class="seat" data-row="E" data-number="6">E6</button>
+                    <button class="seat" data-row="E" data-number="7">E7</button>
+                    <button class="seat" data-row="E" data-number="8">E8</button>
+                    <button class="seat" data-row="E" data-number="9">E9</button>
+                    <button class="seat" data-row="E" data-number="10">E10</button>
+                </div>
+            </div>
+        
+        <div class="movie-list" id="movie-list">
+        </div>
+
+        <div id="assentosDisponiveis">
+        </div>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required>
+        </div>
+    
+        <button type="submit">Reservar Ingresso</button>
+    </form>
+
+        <div class="movie">
+            <img src="/Projeto_cinema/imagens/D e W/D e W.png" width="300" height="400" alt="Deadpool & Wolverine">
+            <h2>Deadpool & Wolverine</h2>
+            <p>Data de Lançamento: 24 de julho de 2024</p>
+            <p>Gênero: Ação, comédia, ficção cientifica</p>
+            <p>Duração: 2h 07min</p>
+            <p>Direção: Shawn levy</p>
+            <p>Elenco: Ryan Reynolds, Hugh Jackman, Emma Corrin</p>
+            <p>Avaliação dos Usuários: <span class="rating">4.0</span></p>
+            
+        </div>
+    </div>
+
+    <div class="date-selector">
+        <button class="date-button active" data-date="2024-08-07">Qua. 7 Ago.</button>
+        <button class="date-button" data-date="2024-08-08">Qui. 8 Ago.</button>
+        <button class="date-button" data-date="2024-08-09">Sex. 9 Ago.</button>
+        <button class="date-button" data-date="2024-08-10">Sáb. 10 Ago.</button>
+    </div>
+
+    <div>
+        <label for="sessao">Selecione o Horário:</label>
+        <select id="sessao" name="sessao">
+            <option value="14:00">14:00</option>
+            <option value="16:00">16:00</option>
+            <option value="18:00">18:00</option>
+            <option value="20:00">20:00</option>
+        </select>
+    </div>  
+
+    <label for="numIngressos">Número de Ingressos:</label>
+            <input type="number" id="numIngressos" name="numIngressos" required>
+
+            <h1>Selecione seus assentos</h1>
+    <div class="cinema-seats">
+        <div class="row">
+            <button class="seat" data-row="A" data-number="1">A1</button>
+            <button class="seat" data-row="A" data-number="2">A2</button>
+            <button class="seat" data-row="A" data-number="3">A3</button>
+            <button class="seat" data-row="A" data-number="4">A4</button>
+            <button class="seat" data-row="A" data-number="5">A5</button>
+            <button class="seat" data-row="A" data-number="6">A6</button>
+            <button class="seat" data-row="A" data-number="7">A7</button>
+            <button class="seat" data-row="A" data-number="8">A8</button>
+            <button class="seat" data-row="A" data-number="9">A9</button>
+            <button class="seat" data-row="A" data-number="10">A10</button>
+        </div>
+    </div>
+    <div class="cinema-seats">
+        <div class="row">
+            <button class="seat" data-row="B" data-number="1">B1</button>
+            <button class="seat" data-row="B" data-number="2">B2</button>
+            <button class="seat" data-row="B" data-number="3">B3</button>
+            <button class="seat" data-row="B" data-number="4">B4</button>
+            <button class="seat" data-row="B" data-number="5">B5</button>
+            <button class="seat" data-row="B" data-number="6">B6</button>
+            <button class="seat" data-row="B" data-number="7">B7</button>
+            <button class="seat" data-row="B" data-number="8">B8</button>
+            <button class="seat" data-row="B" data-number="9">B9</button>
+            <button class="seat" data-row="B" data-number="10">B10</button>
+        </div>
+    </div>
+    <div class="cinema-seats">
+        <div class="row">
+            <button class="seat" data-row="C" data-number="1">C1</button>
+            <button class="seat" data-row="C" data-number="2">C2</button>
+            <button class="seat" data-row="C" data-number="3">C3</button>
+            <button class="seat" data-row="C" data-number="4">C4</button>
+            <button class="seat" data-row="C" data-number="5">C5</button>
+            <button class="seat" data-row="C" data-number="6">C6</button>
+            <button class="seat" data-row="C" data-number="7">C7</button>
+            <button class="seat" data-row="C" data-number="8">C8</button>
+            <button class="seat" data-row="C" data-number="9">C9</button>
+            <button class="seat" data-row="C" data-number="10">C10</button>
+        </div>
+    </div>
+    <div class="cinema-seats">
+        <div class="row">
+            <button class="seat" data-row="D" data-number="1">D1</button>
+            <button class="seat" data-row="D" data-number="2">D2</button>
+            <button class="seat" data-row="D" data-number="3">D3</button>
+            <button class="seat" data-row="D" data-number="4">D4</button>
+            <button class="seat" data-row="D" data-number="5">D5</button>
+            <button class="seat" data-row="D" data-number="6">D6</button>
+            <button class="seat" data-row="D" data-number="7">D7</button>
+            <button class="seat" data-row="D" data-number="8">D8</button>
+            <button class="seat" data-row="D" data-number="9">D9</button>
+            <button class="seat" data-row="D" data-number="10">D10</button>
+        </div>
+    </div>
+    <div class="cinema-seats">
+        <div class="row">
+            <button class="seat" data-row="E" data-number="1">E1</button>
+            <button class="seat" data-row="E" data-number="2">E2</button>
+            <button class="seat" data-row="E" data-number="3">E3</button>
+            <button class="seat" data-row="E" data-number="4">E4</button>
+            <button class="seat" data-row="E" data-number="5">E5</button>
+            <button class="seat" data-row="E" data-number="6">E6</button>
+            <button class="seat" data-row="E" data-number="7">E7</button>
+            <button class="seat" data-row="E" data-number="8">E8</button>
+            <button class="seat" data-row="E" data-number="9">E9</button>
+            <button class="seat" data-row="E" data-number="10">E10</button>
+        </div>
+    </div>
+    
+    <div class="movie-list" id="movie-list">
+    </div>
+
+    <div id="assentosDisponiveis">
+    </div>
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+    </div>
+    <div>
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required>
+    </div>
+    
+    <button type="submit">Reservar Ingresso</button>
+</form>
+
+    <div class="movie">
+        <img src="/Projeto_cinema/imagens/Divertidamente/Divertida mente 2.png" width="300" height="400" alt="Divertida Mente 2">
+        <h2>Divertida Mente 2</h2>
+        <p>Data de Lançamento: 19 de junho de 2024</p>
+        <p>Gênero: Aventura, Animação, Comédia</p>
+        <p>Duração: 1h 36min</p>
+        <p>Direção: Kelsey Mann</p>
+        <p>Elenco: Amy Poehler, Kensington Tallman, Maya Hawke</p>
+        <p>Avaliação dos Usuários: <span class="rating">4.0</span></p>
+        
+    </div>
+</div>
+
+<div class="date-selector">
+    <button class="date-button active" data-date="2024-08-07">Qua. 7 Ago.</button>
+    <button class="date-button" data-date="2024-08-08">Qui. 8 Ago.</button>
+    <button class="date-button" data-date="2024-08-09">Sex. 9 Ago.</button>
+    <button class="date-button" data-date="2024-08-10">Sáb. 10 Ago.</button>
+</div>
+
+<div>
+    <label for="sessao">Selecione o Horário:</label>
+    <select id="sessao" name="sessao">
+        <option value="14:00">14:00</option>
+        <option value="16:00">16:00</option>
+        <option value="18:00">18:00</option>
+        <option value="20:00">20:00</option>
+    </select>
+</div>  
+
+<label for="numIngressos">Número de Ingressos:</label>
+            <input type="number" id="numIngressos" name="numIngressos" required>
+
+            <h1>Selecione seus assentos</h1>
+            <div class="cinema-seats">
+                <div class="row">
+                    <button class="seat" data-row="A" data-number="1">A1</button>
+                    <button class="seat" data-row="A" data-number="2">A2</button>
+                    <button class="seat" data-row="A" data-number="3">A3</button>
+                    <button class="seat" data-row="A" data-number="4">A4</button>
+                    <button class="seat" data-row="A" data-number="5">A5</button>
+                    <button class="seat" data-row="A" data-number="6">A6</button>
+                    <button class="seat" data-row="A" data-number="7">A7</button>
+                    <button class="seat" data-row="A" data-number="8">A8</button>
+                    <button class="seat" data-row="A" data-number="9">A9</button>
+                    <button class="seat" data-row="A" data-number="10">A10</button>
+                </div>
+            </div>
+            <div class="cinema-seats">
+                <div class="row">
+                    <button class="seat" data-row="B" data-number="1">B1</button>
+                    <button class="seat" data-row="B" data-number="2">B2</button>
+                    <button class="seat" data-row="B" data-number="3">B3</button>
+                    <button class="seat" data-row="B" data-number="4">B4</button>
+                    <button class="seat" data-row="B" data-number="5">B5</button>
+                    <button class="seat" data-row="B" data-number="6">B6</button>
+                    <button class="seat" data-row="B" data-number="7">B7</button>
+                    <button class="seat" data-row="B" data-number="8">B8</button>
+                    <button class="seat" data-row="B" data-number="9">B9</button>
+                    <button class="seat" data-row="B" data-number="10">B10</button>
+                </div>
+            </div>
+            <div class="cinema-seats">
+                <div class="row">
+                    <button class="seat" data-row="C" data-number="1">C1</button>
+                    <button class="seat" data-row="C" data-number="2">C2</button>
+                    <button class="seat" data-row="C" data-number="3">C3</button>
+                    <button class="seat" data-row="C" data-number="4">C4</button>
+                    <button class="seat" data-row="C" data-number="5">C5</button>
+                    <button class="seat" data-row="C" data-number="6">C6</button>
+                    <button class="seat" data-row="C" data-number="7">C7</button>
+                    <button class="seat" data-row="C" data-number="8">C8</button>
+                    <button class="seat" data-row="C" data-number="9">C9</button>
+                    <button class="seat" data-row="C" data-number="10">C10</button>
+                </div>
+            </div>
+            <div class="cinema-seats">
+                <div class="row">
+                    <button class="seat" data-row="D" data-number="1">D1</button>
+                    <button class="seat" data-row="D" data-number="2">D2</button>
+                    <button class="seat" data-row="D" data-number="3">D3</button>
+                    <button class="seat" data-row="D" data-number="4">D4</button>
+                    <button class="seat" data-row="D" data-number="5">D5</button>
+                    <button class="seat" data-row="D" data-number="6">D6</button>
+                    <button class="seat" data-row="D" data-number="7">D7</button>
+                    <button class="seat" data-row="D" data-number="8">D8</button>
+                    <button class="seat" data-row="D" data-number="9">D9</button>
+                    <button class="seat" data-row="D" data-number="10">D10</button>
+                </div>
+            </div>
+            <div class="cinema-seats">
+                <div class="row">
+                    <button class="seat" data-row="E" data-number="1">E1</button>
+                    <button class="seat" data-row="E" data-number="2">E2</button>
+                    <button class="seat" data-row="E" data-number="3">E3</button>
+                    <button class="seat" data-row="E" data-number="4">E4</button>
+                    <button class="seat" data-row="E" data-number="5">E5</button>
+                    <button class="seat" data-row="E" data-number="6">E6</button>
+                    <button class="seat" data-row="E" data-number="7">E7</button>
+                    <button class="seat" data-row="E" data-number="8">E8</button>
+                    <button class="seat" data-row="E" data-number="9">E9</button>
+                    <button class="seat" data-row="E" data-number="10">E10</button>
+                </div>
+            </div>
+
+<div class="movie-list" id="movie-list">
+</div>
+        <div id="assentosDisponiveis">
+        </div>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required>
+        </div>
+        
+        <button type="submit">Reservar Ingresso</button>
+    </form>
+
+    <div>
+        <input type="hidden" name="date" id="date">
+        <input type="hidden" name="seats" id="seats">
+    </div>
+
+    <div>
+        <form id="reservaForm" method="POST" action="processa_reserva.php">
+    </div>
+
+    <div>
+        <input type="hidden" name="filme" value="Nome do Filme">
+    </div>
+
+    <script src="./src/assets/js/script.js"></script>
+</body>
+</html>
